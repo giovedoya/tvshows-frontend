@@ -8,16 +8,19 @@ import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <h1>TV shows app</h1>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/new" element={<New />} />
-        <Route path="/shows/:id" element={<Show />} />
-        <Route path="/edit/:id" element={<Edit />} />
-      </Routes>
-    </div>
+<div class="p-4">
+  <Navbar />
+  <h1 class="text-2xl font-bold text-center mt-8 mb-4">TV Shows App</h1>
+  <Routes class="max-w-md mx-auto mt-4">
+    <Route path="/" element={<Home />} />
+    <Route path="/new" element={<New />} />
+    <Route path="/shows/:showId" element={<Show />} />
+    <Route path="/edit/:showId" element={<Edit />} />
+  </Routes>
+</div>
+
+
+
   );
 }
 

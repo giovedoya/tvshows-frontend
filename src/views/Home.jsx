@@ -20,12 +20,13 @@ export default function Home() {
   }, []);
 
   return (
-    <div>
-      {shows &&
-        shows.length > 0 &&
-        shows.map((elem) => {
-          return <Card key={elem._id} show={elem} />;
-        })}
-    </div>
+<div className="flex gap-4">
+  {shows &&
+    shows.length > 0 &&
+    shows.map((elem) => {
+      return <Card key={elem._id} show={elem} />;
+    })}
+</div>
+
   );
 }
